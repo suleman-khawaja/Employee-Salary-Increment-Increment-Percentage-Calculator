@@ -1,1 +1,8 @@
-# Employee-Salary-Increment-Increment-Percentage-Calculator
+ Dynamic Salary & Increment Calculator Using Properties and Setters 🚀
+
+📝 Post Description / README.md ContentHey Everyone! 👋I recently deep-dived into Python's Object-Oriented Programming (OOP) concepts and built a smart Employee Salary & Increment Calculator.Here is a breakdown of what I built, the challenges I faced, and how I solved them:
+❓ The Problem FacedIn standard programming, when one value depends on another (like Total Salary depending on Increment %, or vice versa), we have to manually call update functions every time a change happens. Without proper encapsulation, data can easily mismatch, and the code becomes cluttered with manual function calls.
+💡 The SolutionI utilized Python's powerful @property and @salafterinc.setter decorators. By converting methods into attributes, the program now dynamically calculates:The Total Salary automatically when you provide a baseline salary and increment percentage.The Increment Percentage inversely if you input a target new salary.
+🧩 Key OOP Concepts UsedEncapsulation: Keeping employee data (salary, increment) inside the class structure.Getters (@property): Allowing methods to be accessed cleanly like standard variables without using brackets ().Setters (@name.setter): Enabling the program to intercept user input and run background logic dynamically.
+✨ Simplicity at its BestInstead of complex mathematical frameworks, the project relies on raw logical thinking and core percentage formulas:Salary after Increment: Salary + (Salary * Increment / 100)Reverse Increment %: ((New Salary - Current Salary) / Current Salary) * 100
+🛠️ Local Environment OptimizationI also fixed a common terminal issue where the console window auto-closes immediately after execution outside VS Code. By implementing an explicit final input() buffer, the program remains persistent until the user decides to exit.
